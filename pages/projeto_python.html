@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Portifólio Maurício Souza</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+                            <header id="header">
+                                <a href="../index.html" class="logo"><strong>Portifólio</strong> Maurício Souza</a>
+                                <ul class="icons">
+                                    <li><a href="#" class="icon brands fa-python"><span class="label">Twitter</span></a></li>
+                                    <li><a href="#" class="icon brands fa-docker"><span class="label">Facebook</span></a></li>
+                                    <li><a href="#" class="icon brands fa-medium-m"><span class="label">Linkedin</span></a></li>
+                                </ul>
+                            </header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h2>Automação de preenchimento e inserção de fotos.<br /></h2>
+										</header>
+                                        <div class="major">
+                                            <h3>Problema de negócio:</h3>												
+                                            <ul>
+                                                <p>Necessário enviar um relatório fotográfico para o cliente <br>
+                                                    O serviço consiste em fiscais da empresa ir em campo, fazerem alguns registros de fiscalização das obras e ao término das fiscalizações, há a necessiade de inserir as fotos em 
+                                                    um relatório fotográfico para envio ao cliente.
+                                                </p>
+                                                    Imagem do relatório fotográfico:
+                                                <a href="#" class="image"><img src="../images/projeto_python/rel_foto.JPG" alt="" style="width: 640px; height: 360px;" /></a>
+                                            </ul>    
+                                        </div>
+                                        <div class="major">
+                                            <h3>Planejamento:</h3>
+                                            <ul>
+                                                <p> Criei vba para fazer a inserção de foto por foto, setando para foto ficar centralizada dentro do espaço em que ela será inserida.<br>
+                                                    Utilizando a biblioteca pyautogui, que simula comandos do teclado, como as fotos são divididas em grupo de 03, criei um padrão para preenchimento utilizando as setas do teclado e alt+f8 para chamar o vba.
+                                                </p>
+                                            </ul>
+                                        </div> 
+                                        <div class="major">
+                                            <h3>Construção:</h3>
+                                            <ul>
+                                                A partir daí, usei a engenharia de prompt com ChatGPT para montar o código, O usuário abre o arquivo xlsm, seleciona no primeiro quadro de foto, presionando alt+f8, seleciona a pasta com as fotos organizadas, inserie uma foto e depois deleta a mesma do relatório, então abre o arquivo Relatorio_fotos.pyw:
+                                            </ul>
+                                            <ul>
+                                                    <ul>
+                                                        Janlea principal, o usuário escolhe se quer organizar as fotos por ordem numérica ou inserir as fotos no relatório fotográfico:
+                                                        <a href="#" class="image"><img src="../images/projeto_python/janela.JPG" alt="" style="width: 300px; height: 150px;" /></a>
+                                                    </ul>
+                                                </ul>
+                                                <ul>
+                                                    <ul>
+                                                        Janela organiza fotos, o usuário indica a pasta onde estão as fotos, dentro dela o programa cria uma pasta chamada Fotos_Organizadas, onde as fotos originais com a nomenclatura qualquer são numeradas a partir de 001.
+                                                        <a href="#" class="image"><img src="../images/projeto_python/janela01.JPG" alt="" style="width: 300px; height: 150px;" /></a>
+                                                    </ul>
+                                                </ul>
+                                                <ul>
+                                                    <ul>
+                                                        Janela inserir fotos relatório, o usuário precisa informar:
+                                                            <ul>
+                                                                <li>Quantas fotos serão inseridas</li>
+                                                                <li>Qual o caminho do arquivo Fotos.xlsm</li>
+                                                                <li>Qual o caminho da pasta com as fotos organiadas por nome</li>
+                                                                <a href="#" class="image"><img src="../images/projeto_python/janela02.JPG" alt="" style="width: 300px; height: 150px;" /></a>
+                                                            </ul>
+                                                    </li>
+                                                        Ao clicar em iniciar, aparece algumas instruções, após clicar em OK, o usuário necessita abrir novamente o Relatorio_fotos e selecionar novamente o primeiro quadro da foto.<br>
+                                                        A partir daí, o programa faz as inserções das fotos.
+                                                </ul>
+                                            </ul>
+                                        </div>
+                                            <h3>Demonstração</h3>
+                                                <ul>
+                                                    Nessa demonstração foram usadas fotos públicas do site: https://pixabay.com/ para demonstrar como é feito todo o processo da automação.<br> Para um cenário de poucas fotos como na demonstração, talvez aparenta não fazer sentido passar por todas essas etapas para a ferramenta fazer a inserção das fotos, mas em um cenário onde as vezes é necessário inserir 300, 500 ou 600 fotos, a ferramenta ajuda muito pois, o relatório é preenchido em minutos, agilizando uma parte importante do dia do usuário.
+                                                </ul>
+                                                <ul>
+                                                    <div style="display: flex; gap: 20px;">
+                                                        <video width="640" height="360" controls poster="../videos/thumb_relatorio_foto.JPG">
+                                                            <source src="../videos/projeto_relatotio_foto.mp4" type="video/mp4">
+                                                            Seu navegador não suporta a reprodução de vídeos.
+                                                        </video>
+                                                    </div>                                            
+                                                </ul>
+                                                <h3></h3>
+                                                <ul class="actions">
+                                                    <li><a href="../index.html" class="button">Voltar</a></li>
+                                                </ul>
+                                        </div>
+                                </section>
+                                <section>
+                                    <header class="major">
+                                        <h2>Contatos:</h2>
+                                    </header>
+                                    <p>Você pode me contatar pelo Linkedin:</p>
+                                    <ul class="contact">
+                                        <a href="https://www.linkedin.com/in/josemauriciovieirasouza/"" class="image"><img src="../icons/linkedin.png" alt="" style="width: 60px; height: 60px;" /></a>
+                                    </ul>
+                                    <!-- Footer -->
+                                    <footer id="footer">
+                                        <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash. Design: <a href="https://html5up.net">HTML5 UP</a>. Icones: <a href="https://www.flaticon.com/br/">Flaticon</a>.</p>
+                                    </footer>
+                                </section>
+
+                                
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
